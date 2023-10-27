@@ -48,7 +48,7 @@ for column, desc in column_descriptions.items():
 ## Bar plot for target variable
 
 # Setting up columns for plots
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 col1.subheader("Distribution of Target Variable (Heart Disease Presence)")
 st.write("This plot shows the number of patients with and without heart disease.")
