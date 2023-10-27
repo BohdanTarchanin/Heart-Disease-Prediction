@@ -57,7 +57,7 @@ sns.countplot(data=data, x="target", ax=ax)
 col1.pyplot(fig)
 
 ## Histogram for age
-col2.subheader("Age Distribution"
+col2.subheader("Age Distribution")
 st.write("Histogram displaying the distribution of ages among patients.", "Histogram displaying the distribution of ages among patients.")")
 fig, ax = plt.subplots()
 sns.histplot(data=data, x="age", kde=True, ax=ax)
@@ -72,7 +72,7 @@ st.pyplot(fig)
 
 ## Gender Distribution with respect to Heart Disease"
 st.write("Comparison of heart disease presence between males and females.", "Comparison of heart disease presence between males and females.")
-st.subheader("Gender Distribution with respect to Heart Disease"
+st.subheader("Gender Distribution with respect to Heart Disease")
 st.write("Comparison of heart disease presence between males and females.", "Comparison of heart disease presence between males and females.")")
 fig, ax = plt.subplots()
 sns.countplot(data=data, x="sex", hue="target", ax=ax)
@@ -81,7 +81,7 @@ st.pyplot(fig)
 
 ## Distribution of Chest Pain Types"
 st.write("Different types of chest pain experienced by patients.", "Different types of chest pain experienced by patients.")
-st.subheader("Distribution of Chest Pain Types"
+st.subheader("Distribution of Chest Pain Types")
 st.write("Different types of chest pain experienced by patients.", "Different types of chest pain experienced by patients.")")
 fig, ax = plt.subplots()
 sns.countplot(data=data, x="cp", ax=ax)
@@ -89,7 +89,7 @@ st.pyplot(fig)
 
 ## Correlation Heatmap"
 st.write("Heatmap showing correlations between numerical variables. Darker shades represent stronger correlations.", "Heatmap showing correlations between numerical variables. Darker shades represent stronger correlations.")
-st.subheader("Correlation Heatmap"
+st.subheader("Correlation Heatmap")
 st.write("Heatmap showing correlations between numerical variables. Darker shades represent stronger correlations.", "Heatmap showing correlations between numerical variables. Darker shades represent stronger correlations.")")
 correlation = data.corr()
 fig, ax = plt.subplots(figsize=(10, 8))
@@ -98,7 +98,7 @@ st.pyplot(fig)
 
 ## Resting Blood Pressure vs. Age"
 st.write("Scatter plot visualizing any trends between age and resting blood pressure.", "Scatter plot visualizing any trends between age and resting blood pressure.")
-st.subheader("Resting Blood Pressure vs. Age"
+st.subheader("Resting Blood Pressure vs. Age")
 st.write("Scatter plot visualizing any trends between age and resting blood pressure.", "Scatter plot visualizing any trends between age and resting blood pressure.")")
 fig, ax = plt.subplots()
 sns.scatterplot(data=data, x="age", y="trestbps", hue="target", ax=ax)
@@ -106,7 +106,7 @@ st.pyplot(fig)
 
 ## Maximum Heart Rate Achieved vs. Age"
 st.write("Scatter plot showing the relationship between age and maximum heart rate during a test.", "Scatter plot showing the relationship between age and maximum heart rate during a test.")
-st.subheader("Maximum Heart Rate Achieved vs. Age"
+st.subheader("Maximum Heart Rate Achieved vs. Age")
 st.write("Scatter plot showing the relationship between age and maximum heart rate during a test.", "Scatter plot showing the relationship between age and maximum heart rate during a test.")")
 fig, ax = plt.subplots()
 sns.scatterplot(data=data, x="age", y="thalach", hue="target", ax=ax)
