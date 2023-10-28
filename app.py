@@ -64,7 +64,8 @@ sns.histplot(data=data, x="age", kde=True, ax=ax)
 col2.pyplot(fig)
 
 ## Pie chart for gender distribution
-col1.subheader("Gender Distribution")
+col1.subheader("Gender Distribution of Heart Disease")
+col1.write("CDifferences in the occurrence of heart disease between men and women.")
 fig, ax = plt.subplots()
 data['sex'].value_counts().plot.pie(explode=[0,0.1], labels=['Male', 'Female'], autopct='%1.1f%%', ax=ax)
 col1.pyplot(fig)
@@ -89,7 +90,7 @@ col1.pyplot(fig)
 ## Correlation Heatmap"
 
 col2.subheader("Correlation Heatmap")
-col2.write("Heatmap showing correlations between numerical variables. Darker shades represent stronger correlations.")
+col2.write("Heatmap showing correlations between numerical variables.")
 correlation = data.corr()
 fig, ax = plt.subplots(figsize=(10, 8))
 sns.heatmap(correlation, annot=True, cmap='coolwarm', ax=ax)
