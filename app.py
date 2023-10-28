@@ -51,14 +51,14 @@ for column, desc in column_descriptions.items():
 col1, col2 = st.columns(2)
 
 col1.subheader("Heart Disease Presence")
-st.write("This plot shows the number of patients with and without heart disease.")
+col1.write("This plot shows the number of patients with and without heart disease.")
 fig, ax = plt.subplots()
 sns.countplot(data=data, x="target", ax=ax)
 col1.pyplot(fig)
 
 ## Histogram for age
 col2.subheader("Age Distribution")
-st.write("Histogram displaying the distribution of ages among patients.")
+col2.write("Histogram displaying the distribution of ages among patients.")
 fig, ax = plt.subplots()
 sns.histplot(data=data, x="age", kde=True, ax=ax)
 col2.pyplot(fig)
