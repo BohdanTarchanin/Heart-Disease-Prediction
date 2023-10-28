@@ -65,7 +65,6 @@ col2.pyplot(fig)
 
 ## Pie chart for gender distribution
 col1.subheader("Gender Distribution of Heart Disease")
-col1.write("CDifferences in the occurrence of heart disease between men and women.")
 fig, ax = plt.subplots()
 data['sex'].value_counts().plot.pie(explode=[0,0.1], labels=['Male', 'Female'], autopct='%1.1f%%', ax=ax)
 col1.pyplot(fig)
