@@ -8,7 +8,7 @@ import seaborn as sns
 data = pd.read_csv('heart.csv')
 
 # App title and description
-st.title("Heart Disease Dataset Analysis 12345")
+st.title("Heart Disease Dataset Analysis")
 st.write(
     "This app provides an analysis of a dataset related to heart disease. "
     "You can view the dataset, its description, and some exploratory data analysis visuals below."
