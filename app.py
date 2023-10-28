@@ -50,7 +50,7 @@ for column, desc in column_descriptions.items():
 # Setting up columns for plots
 col1, col2 = st.columns(2)
 
-col1.subheader("Distribution of Target Variable (Heart Disease Presence)")
+col1.subheader("Heart Disease Presence")
 st.write("This plot shows the number of patients with and without heart disease.")
 fig, ax = plt.subplots()
 sns.countplot(data=data, x="target", ax=ax)
