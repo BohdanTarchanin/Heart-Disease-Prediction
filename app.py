@@ -14,6 +14,8 @@ st.write(
     "You can view the dataset, its description, and some exploratory data analysis visuals below."
 )
 
+st.image('heart-image.png')
+
 # Display part of the dataset
 st.subheader("Sample Data")
 st.write(data.head(10))
