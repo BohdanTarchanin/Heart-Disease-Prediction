@@ -18,6 +18,12 @@ st.write(
 st.subheader("Sample Data")
 st.write(data.head(10))
 
+st.info(
+            f"""
+                Heart Disease Dataset on the Kaggle. [Link](https://www.kaggle.com/datasets/priyanka841/heart-disease-prediction-uci)
+                """
+        )
+
 # Dataset information
 st.subheader("Dataset Information")
 st.write(
