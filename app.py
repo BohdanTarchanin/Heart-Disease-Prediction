@@ -111,11 +111,6 @@ fig, ax = plt.subplots()
 sns.scatterplot(data=data, x="age", y="thalach", hue="target", ax=ax)
 col2.pyplot(fig)
 
-
-if __name__ == "__main__":
-    st.write("Streamlit app is running!")
-
-
 st.subheader("Conclusion")
 st.write(
     "From the exploratory data analysis of the heart disease dataset, we can infer the following:"
